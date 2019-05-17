@@ -1,6 +1,19 @@
 {
+    "author": "NeoBeum",
     "name": "Google Australia - Yandex Extension",
     "version": "1.0",
     "description": "Google Australia Search Extension for Yandex Browser on Android",
-    "manifest_version": 2
+    "manifest_version": 2,
+
+    "default_locale": "en",
+    
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "name": "Google Australia",
+            "search_url": "https://www.google.com.au/search?q={searchTerms}",
+            "favicon_url": "https://www.google.com/s2/favicons?domain=www.google.com",
+            "encoding": "UTF-8",
+            "is_default": true
+        }
+    }
 }
